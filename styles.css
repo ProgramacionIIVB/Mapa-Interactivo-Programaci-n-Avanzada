@@ -1,0 +1,134 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    background-color: #121212;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url('imagenes/fondo-medieval.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f0e0;
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#mapa,
+#zona,
+#insignias-coleccion {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 3px solid #b9935c;
+    border-radius: 12px;
+    width: 95%;
+    max-width: 900px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#mapa-fragmentado {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 900px; /* fijo o dinámico según el mapa */
+  }
+  
+
+.fragmento-mapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.15;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.fragmento-mapa.desbloqueado {
+    opacity: 1;
+    z-index: 2;
+}
+
+button {
+    background: linear-gradient(to bottom, #b9935c, #8c6239);
+    color: #fff;
+    border: 2px solid #5a3e1b;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    transition: transform 0.2s, background 0.2s;
+    max-width: 90%;
+    display: inline-block;
+}
+
+button:hover {
+    background: #d2a679;
+    transform: scale(1.05);
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+#insignias-coleccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+#insignias-coleccion div {
+    max-width: 120px;
+    text-align: center;
+}
+
+.insignia-desbloqueada {
+    width: 80px;
+    height: auto;
+    opacity: 1 !important;
+    filter: drop-shadow(0 0 5px gold);
+    margin-bottom: 5px;
+}
+
+.pregunta {
+    margin: 20px 0;
+    text-align: left;
+    background-color: rgba(40, 40, 40, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.zona-img,
+.coleccion-img {
+    border: 3px solid #b9935c;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #000;
+    max-width: 100%;
+}

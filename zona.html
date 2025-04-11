@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zona de CodeQuest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="titulo-zona">Zona</h1>
+
+    <div id="zona">
+        <img id="imagen-zona" class="zona-img" src="" alt="Imagen de la zona">
+        
+        <div id="preguntas"></div>
+
+        <div class="acciones">
+            <button onclick="verificarRespuestas()">Verificar respuestas</button>
+            <button id="volver-mapa">🗺️ Volver al Mapa</button>
+            <button id="toggle-musica">🔊 Música</button>
+        </div>
+
+        <div id="coleccion-zona" style="display: none;">
+            <h2>¡Felicitaciones!</h2>
+            <p>Has desbloqueado este lugar especial del Reino:</p>
+            <img id="imagen-coleccion" class="coleccion-img" src="" alt="Imagen de colección">
+            <p id="descripcion-coleccion"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
