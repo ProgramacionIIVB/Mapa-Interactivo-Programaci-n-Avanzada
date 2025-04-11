@@ -1,0 +1,45 @@
+{
+  "zonas": {
+    "bosque_constructor": {
+      "titulo": "Aldea del Constructor",
+      "imagen": "imagenes/zonas/bosque_constructor.jpg",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuáles son las dos palabras reservadas en una clase?",
+          "opciones": [
+            "class, atributos",
+            "class, métodos",
+            "class, constructor",
+            "constructor, extends"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿El método constructor sirve para inicializar los...?",
+          "opciones": [
+            "métodos",
+            "atributos",
+            "eventos",
+            "archivos"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿A los comportamientos definidos fuera del constructor los llamamos...?",
+          "opciones": [
+            "clases",
+            "valores",
+            "métodos",
+            "parámetros"
+          ],
+          "correcta": 2
+        }
+      ],
+      "insignia": {
+        "imagen": "imagenes/insignias/espada.png",
+        "nombre": "Espada del Constructor",
+        "descripcion": "Por dominar los fundamentos de las clases en POO."
+      }
+    }
+  }
+}
